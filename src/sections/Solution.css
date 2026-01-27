@@ -1,0 +1,119 @@
+.solution-section {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: var(--font-mono);
+  color: var(--green-primary);
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 1px;
+}
+
+.solution-intro {
+  font-size: 1.05rem;
+  color: var(--text-white);
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.solution-intro.secondary {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.solution-card {
+  padding: 1.5rem;
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+  background-color: rgba(0, 255, 136, 0.02);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.solution-card:hover {
+  border-color: var(--green-primary);
+  background-color: rgba(0, 255, 136, 0.05);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.1);
+  transform: translateY(-4px);
+}
+
+.solution-icon {
+  font-size: 1.5rem;
+  color: var(--green-primary);
+  font-weight: bold;
+  font-family: var(--font-mono);
+}
+
+.solution-title {
+  font-size: 1rem;
+  color: var(--text-white);
+  margin: 0;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.solution-description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.solution-details {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-left: 2px solid var(--green-primary);
+  background-color: rgba(0, 255, 136, 0.03);
+}
+
+.solution-details p {
+  color: var(--text-white);
+  line-height: 1.8;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.solution-details p:last-child {
+  margin-bottom: 0;
+}
+
+.goal-statement {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  background-color: rgba(0, 255, 136, 0.08);
+  padding: 1.25rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .solutions-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .solution-card {
+    padding: 1rem;
+  }
+
+  .solution-details {
+    padding: 1.5rem;
+  }
+}

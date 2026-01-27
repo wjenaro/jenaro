@@ -1,0 +1,15 @@
+.section-wrapper {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--divider);
+  width: 100%;
+}
+
+.section-wrapper:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 2.5rem 0;
+  }
+}

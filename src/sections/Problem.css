@@ -1,0 +1,108 @@
+.problem-section {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.problem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.problem-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: var(--font-mono);
+  color: var(--green-primary);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.problem-intro {
+  font-size: 1.1rem;
+  color: var(--text-white);
+  line-height: 1.8;
+  max-width: 100%;
+  margin: 0;
+}
+
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2rem;
+  border-left: 2px solid var(--green-primary);
+  background-color: rgba(0, 255, 136, 0.03);
+  border-radius: 2px;
+}
+
+.issue-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.issue-label {
+  font-family: var(--font-mono);
+  color: var(--green-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  padding-top: 0.25rem;
+  letter-spacing: 1px;
+}
+
+.issue-item p {
+  color: var(--text-white);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.problem-conclusion {
+  padding: 2rem;
+  border: 1px solid var(--divider);
+  background-color: rgba(0, 255, 136, 0.05);
+  border-radius: 4px;
+}
+
+.conclusion-text {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--green-primary);
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.terminal-prompt {
+  color: var(--green-primary);
+  margin-right: 0.5rem;
+}
+
+.conclusion-description {
+  color: var(--text-white);
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .problem-intro {
+    font-size: 1rem;
+  }
+
+  .issues-list {
+    padding: 1.5rem;
+  }
+
+  .problem-conclusion {
+    padding: 1.5rem;
+  }
+}

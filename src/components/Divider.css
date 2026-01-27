@@ -1,0 +1,12 @@
+.divider {
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--divider) 0px,
+    var(--divider) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  margin: 3rem 0;
+}

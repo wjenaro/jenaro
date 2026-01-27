@@ -1,0 +1,60 @@
+.cmd-button {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.cmd-button.primary {
+  background-color: var(--green-primary);
+  color: var(--bg-dark);
+  border: 2px solid var(--green-primary);
+}
+
+.cmd-button.primary:hover {
+  background-color: var(--green-secondary);
+  border-color: var(--green-secondary);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+.cmd-button.secondary {
+  background-color: transparent;
+  color: var(--green-primary);
+  border: 2px solid var(--green-primary);
+}
+
+.cmd-button.secondary:hover {
+  background-color: rgba(0, 255, 136, 0.1);
+  border-color: var(--green-secondary);
+  color: var(--green-secondary);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.button-text {
+  display: inline;
+}
+
+.button-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cmd-button:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .cmd-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
