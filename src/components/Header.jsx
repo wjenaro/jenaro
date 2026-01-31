@@ -7,7 +7,7 @@ export default function Header() {
         <div className="header-content">
           <div className="logo-section">
             <div className="logo">
-              <span className="green terminal-text">{'> JWM'}</span>
+              <span className="green terminal-text">{'> Jenaro  Portfolio'}</span>
             </div>
             <div className="cursor-blink"></div>
           </div>
