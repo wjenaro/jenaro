@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import TerminalText from '../components/TerminalText';
 import Button from '../components/Button';
+import jenaroImage from '../assets/jenaro_dev.webp';
 import './Hero.css';
 
 export default function Hero() {
@@ -66,10 +67,25 @@ export default function Hero() {
           <div className="image-placeholder">
             <div className="image-frame">
               <div className="image-content">
-                {/* Placeholder for actual image */}
-                <div className="placeholder-text">
-                  <span className="terminal-text">{'> jenaro_dev'}</span>
-                </div>
+                {/* here is where I will have my image */}
+                <div style={{ 
+                  display: 'inline-block',
+                  padding: '6px',
+                  boxShadow:'0 0 20px rgba(0,255,136,.25)',
+                  borderRadius: '14px' }}>
+                    <img
+                      src={jenaroImage}
+                      alt="Jenaro Developer"
+                      style={{
+                        display: 'block',
+                        maxWidth: '100%',
+                        height: 'auto',
+                        borderRadius: '12px'
+                      }}
+                    />
+                  </div>
+
+
               </div>
             </div>
           </div>
